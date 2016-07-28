@@ -94,4 +94,10 @@
             </props>
         </property>
     </bean>
+
+    <bean id="customEventHandler"
+          class="customEvent.CustomEventHandler"/>
+
+    <bean id="customEventPublisher"
+          class="customEvent.CustomEventPublisher"/>
 </beans>
