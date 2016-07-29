@@ -22,9 +22,9 @@
         <property name="message3" value="Hello, Welcome to China!"></property>
     </bean>
 
-    <bean id="cStartedEventHandler" class="helloXml.CStartEventHandler"/>
+    <!--<bean id="cStartedEventHandler" class="helloXml.CStartEventHandler"/>-->
 
-    <bean id="cStoppedEventHandler" class="helloXml.CStopEventHandler"/>
+    <!--<bean id="cStoppedEventHandler" class="helloXml.CStopEventHandler"/>-->
     <!--<bean id="hello" class="helloXml.Hello" init-method="init" destroy-method="destroy">-->
         <!--<property name="message" value="Hello World!"></property>-->
     <!--</bean>-->
