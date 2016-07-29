@@ -1,5 +1,6 @@
 package utils;
 
+import advice.Student;
 import collection.JavaCollection;
 import customEvent.CustomEventPublisher;
 import org.springframework.context.ApplicationContext;
@@ -13,8 +14,8 @@ import text.TextEditor;
 public class MainApp {
 
     public static void main(String[] args) {
-//        ApplicationContext ctx = new ClassPathXmlApplicationContext("Beans.xml");
-        ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext("Beans.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("Beans.xml");
+//        ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext("Beans.xml");
 
 //        TextEditor te = (TextEditor) ctx.getBean("textEditor");
 //        te.spellCheck();
@@ -25,8 +26,13 @@ public class MainApp {
 //        jc.getAddressProp();
 //        jc.getAddressSet();
 
-        CustomEventPublisher cep = (CustomEventPublisher) ctx.getBean("customEventPublisher");
+//        CustomEventPublisher cep = (CustomEventPublisher) ctx.getBean("customEventPublisher");
+//
+//        cep.publish();
 
-        cep.publish();
+        Student st = (Student) ctx.getBean("student");
+        st.getName();
+        st.getAge();
+        st.printThrowException();
     }
 }
