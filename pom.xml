@@ -13,7 +13,7 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncodin>UTF-8</project.build.sourceEncodin>
         <!-- Spring Framework -->
-        <spring-framework.version>4.3.1.RELEASE</spring-framework.version>
+        <spring-framework.version>5.2.20.RELEASE</spring-framework.version>
     </properties>
 
     <dependencies>
